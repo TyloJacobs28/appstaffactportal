@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supervisor Dashboard</title>
+  <link rel="stylesheet" href="supervisor.css">
+</head>
+<body>
+  <div class="container">
+    <header class="app-header">
+      <h1 class="app-title">Supervisor Dashboard</h1>
+      <div class="header-actions">
+        <input type="text" id="search" class="search-input" placeholder="Search staff...">
+        <button id="export-btn" class="btn-export">📊 Export CSV</button>
+        <button id="theme-toggle" class="icon-btn">🌙</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="team-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Avatar</th>
+              <th>Name</th>
+              <th>Status</th>
+              <th>Last Update</th>
+              <th>Session Duration</th>
+            </tr>
+          </thead>
+          <tbody id="team-body"></tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+  <script src="supervisor.js"></script>
+</body>
+</html>
